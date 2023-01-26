@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <!-- <link rel="stylesheet" href="src/css/materialize.css" />
+    <link rel="stylesheet" href="src/css/materialize.min.css" /> -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>iQuran</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-nav">
+        <div class="logo">
+          <a href="">i<span>Quran</span></a>
+        </div>
+        <div class="navbar-item">
+          <a href="#">About Us</a>
+        </div>
+      </div>
+      <div class="navbar-extra">
+        <div class="extra-item">
+          <a href="index.html">
+            <i class="bx bxs-book-open"></i>
+          </a>
+          <p>Surat</p>
+        </div>
+        <div class="extra-item">
+          <a href="">
+            <i class="bx bx-bookmark"></i>
+          </a>
+          <p>Bookmark</p>
+        </div>
+        <div class="extra-item">
+          <a href="">
+            <i class="bx bx-time"></i>
+          </a>
+          <p>Last Read</p>
+        </div>
+        <div class="extra-item">
+          <a href="">
+            <i class="bx bx-child"></i>
+          </a>
+          <p>Ngaji</p>
+        </div>
+        <div class="extra-item">
+          <a href="">
+            <i class="bx bx-cog"></i>
+          </a>
+          <p>Setting</p>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="white-text alquran">
+            <div class="list-audio" style="display: none"></div>
+
+            <ul class="ayat" id="list-ayah"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="src/js/main.js"></script>
+  <script src="src/js/jquery-3.4.1.min.js"></script>
+
+  <script>
+    surahPage();
+  </script>
+</html>
