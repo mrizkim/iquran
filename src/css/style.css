@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 
+@font-face {
+  font-family: "mequran";
+  src: url("../me_quran.ttf");
+  font-weight: bold;
+}
+
 :root {
   --bg-color: #040c23;
   --primary: #863ed5;
@@ -78,8 +84,9 @@ body {
   font-size: 2rem;
   color: var(--secondary);
   background-color: var(--text-color);
-  padding: 0.3rem;
+  padding: 0.8rem;
   border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .navbar .navbar-extra .extra-item p {
@@ -88,20 +95,12 @@ body {
 }
 
 .container {
-  margin-top: 13rem;
+  margin-top: 14rem;
   padding: 0 7%;
 }
 
 .container .section .alquran {
   color: var(--text-color);
-  display: flex;
-  justify-content: space-between;
-}
-
-table,
-th,
-td {
-  border: none;
 }
 
 table {
@@ -110,35 +109,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 table.striped tr {
   border-bottom: 1px solid #7b80ad;
+}
+
+.no_s {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: url(/src/img/icon-number.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30%;
 }
 
 /* table.striped > tbody > tr:nth-child(odd) {
   background-color: rgba(242, 242, 242, 0.5);
 } */
 
-table.striped > tbody > tr > td {
-  border-radius: 0;
-}
-
-table.highlight > tbody > tr {
-  -webkit-transition: background-color 0.25s ease;
-  transition: background-color 0.25s ease;
-}
-
-table.highlight > tbody > tr:hover {
-  background-color: rgba(242, 242, 242, 0.5);
-}
-
-table.centered thead tr th,
-table.centered tbody tr td {
-  text-align: center;
-}
-
 tr {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
@@ -148,6 +136,59 @@ th {
   text-align: center;
   border-radius: 2px;
 }
+
+/* SURAH.HTML */
+
+.list-item {
+  display: flex;
+  border-bottom: 0.02em solid #6c757d;
+  padding-bottom: 10px;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.item-icon {
+  flex-basis: 13%;
+  text-align: center;
+}
+
+.item-icon .no-ayat,
+.item-icon i {
+  margin-top: 1.4em;
+}
+
+.item-teks {
+  flex-basis: 75%;
+}
+
+.teks-arab {
+  font-family: "mequran";
+  color: var(--text-color);
+  text-align: right;
+  margin-top: 1.2em;
+  font-size: 3em;
+  line-height: 2em;
+  margin-bottom: 1em;
+}
+.teks-indo {
+  color: var(--secondary);
+}
+.no-ayat {
+  /* border: 2px solid #218838; */
+  background: url(/src/img/icon-number.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 3.5rem;
+  height: 3.5rem;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  padding-top: 20%;
+}
+
 /* laptop */
 @media (max-width: 1366px) {
   html {

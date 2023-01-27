@@ -10,7 +10,7 @@ const quranPage = () => {
     data.forEach((d) => {
       const elemenList = `<tr  class="">
                         <th class="td1" width="10"><div class="no_s">${i}</div> </th>
-                        <td class="td2 tebal nama_s" no-surah="${d.number}">${d.englishName}</td>
+                        <td class="td2 tebal nama_s" no-surah="${d.number}">${d.englishName} </br> "${d.englishNameTranslation}"</td>
                         <td class="td2 text-right">${d.numberOfAyahs} Ayat</td>
                     </tr>`;
       $("#list").append(elemenList);
